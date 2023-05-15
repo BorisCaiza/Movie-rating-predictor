@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css') }}">
+</head>
+<body>
+<h1>Su predicción es de:</h1>
+<br><br>
+<h2>Modelo Random Forest: {{ resultado_random }}</h2> <br><br>
+<h2>Modelo Regresion Lineal: {{ resultado_regresion }}</h2> <br><br>
+<h2>Modelo SVR: {{ resultado_svr }}</h2> <br><br>
+<h2>Modelo KNN: {{ resultado_knn }}</h2> <br><br>
+
+
+
+</body>
+</html>

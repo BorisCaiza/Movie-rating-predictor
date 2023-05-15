@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask App</title>
+     <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css') }}">
+</head>
+<body>
+<h1>Prediccion Rate</h1>
+<h2>Ingresa los datos</h2>
+<div class="form-style">
+ <form action="{{ url_for('predict') }}"  method="post">
+    <label>Año : </label> <br><br><input class="input" type = "number" name = "date" placeholder="Ingresa el año" width="40%" height="1px"> <br><br>
+    <label>Votos :</label><br><br><input class="input" type = "number" name = "votes" placeholder="Ingresa el número de votos" size="40"> <br><br>
+    <label>Duración:</label><br><br><input class="input" type = "number" name = "duration" placeholder="Ingresa el tiempo en minutos" size="40" > <br><br>
+     <label>Pelicula o Serie:</label> <br><br>
+      <select class="select" name="type" id="type">
+                <option value="1">Pelicula</option>
+                <option value="0">Serie</option>
+      </select> <br><br>
+
+     <label>Certificado:</label> <br><br>
+      <select class="select"  name="certificate" id="certificate">
+                <option value="0">Todo Público</option>
+                <option value="1">Trece años</option>
+                <option value="2">Mayores de edad</option>
+                <option value="3">No calificada</option>
+      </select> <br><br>
+
+
+     <label>Desnudez:</label> <br><br>
+      <select class="select"  name="nudity" id="nudity">
+                <option value="0">Nada</option>
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="3">3</option>
+      </select> <br><br>
+
+      <label>Violencia:</label> <br><br>
+      <select class="select"  name="violence" id="violence">
+                <option value="0">Nada</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+      </select> <br><br>
+
+      <label>Profanidad:</label> <br><br>
+      <select class="select"  name="profanity" id="profanity">
+                <option value="0">Nada</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+      </select> <br><br>
+
+     <label>Alcohol:</label> <br><br>
+      <select class="select"  name="alcohol" id="alcohol">
+                <option value="0">Nada</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+      </select> <br><br>
+
+     <label>Atemorizante:</label> <br><br>
+      <select class="select"  name="frightening" id="frightening">
+                <option value="0">Nada</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+      </select> <br><br>
+
+
+     <button class="botones" type="submit">Enviar</button>
+</form>
+</div>
+
+
+</body>
+</html>
