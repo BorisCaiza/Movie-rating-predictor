@@ -38,7 +38,7 @@ import pickle
 import joblib
 from sklearn.neighbors import KNeighborsRegressor
 
-df = pd.read_csv('./drive/MyDrive/DeberesML/imdb.csv')
+df = pd.read_csv('./drive/MyDrive/ML/imdb.csv')
 df_original = df
 df_original.info()
 
